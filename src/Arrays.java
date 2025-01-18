@@ -1,7 +1,7 @@
 public class Arrays {
     public static void main(String[] args) {
         int nums[] = {3, 4, 5, 8, 2, 1};
-        int target =16;
+        int target =1;
         int result = linearSearch(nums, target);
         if (result != -1)
             System.out.println("element found at index  " + result);
