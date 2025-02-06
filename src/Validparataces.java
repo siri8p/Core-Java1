@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Validparataces {
     public static void main(String[] args) {
-        String s = "()]";
+        String s = "()*";
         System.out.println(isValid(s));
     }
     public static boolean isValid(String s) {
@@ -30,3 +30,20 @@ public class Validparataces {
        return stack.isEmpty();
     }
 }
+//            HashMap<Character,Character> maps=new HashMap<Character,Character>();
+//            maps.put(')','(');
+//            maps.put(']','[');
+//            maps.put('}','{');
+//            Stack<Character> stack=new Stack<Character>();
+//            for(char c:s.toCharArray()){
+//
+//                if(maps.containsKey(c)){
+//                    if(stack.empty()||stack.pop()!=maps.get(c))return false;
+//                }
+//                else
+//                    stack.push(c);
+//            }
+//            return stack.empty();
+//
+//        }
+//    }
